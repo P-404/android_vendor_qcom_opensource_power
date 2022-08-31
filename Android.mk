@@ -8,9 +8,9 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_RELATIVE_PATH := hw
 ifneq ( ,$(filter 11 R ,$(PLATFORM_VERSION)))
-LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libutils android.hardware.power-ndk_platform libbinder_ndk
+LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libutils android.hardware.power-ndk libbinder_ndk
 else
-LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libutils android.hardware.power-V1-ndk_platform libbinder_ndk
+LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libxml2 libbase libutils android.hardware.power-V1-ndk libbinder_ndk
 endif
 LOCAL_HEADER_LIBRARIES += libutils_headers
 LOCAL_HEADER_LIBRARIES += libhardware_headers
